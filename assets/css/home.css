@@ -1,0 +1,181 @@
+
+.start{
+text-align:center;
+background-color:rgb(18, 212, 115);
+
+width:450px;
+}
+.first {
+  border-radius: 5px;
+  background-color: rgb(232, 231, 238);
+  padding: 20px;
+  display:flex;
+  flex-direction:column;
+  
+  
+}
+.heading h2{
+  margin-top: 1rem;
+  font-size:large;
+ font-stretch: extra-expanded;
+  font-style:sans-serif;
+  text-decoration-color: transparent;
+  
+  text-align: justify;
+  color:white;
+  text-shadow: 0.5px 0.5px greenyellow;
+  
+}
+
+/* css for input text Desiption and Category  */
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+/* for select in dropdown list */
+  select {
+  width: 49%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* for date field */
+input[type=date]{
+  width: 49%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/* for Add task button */
+input[type=submit] {
+  width: 38%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+/* Add button */
+.task{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  
+  }
+  .input{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  }
+/* hover in add task */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+
+
+/* 2nd half css for ejs */
+
+
+.first0 {
+  border-radius: 5px;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+ 
+  
+}
+
+.first1 {
+  background-color: rgb(232, 231, 238);
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;  
+      }
+
+
+.first1 p{
+  margin-left: 1rem;
+  font-size: small;
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: wider;
+  text-shadow: 0.5px 0.5px greenyellow;
+  color:green;
+}
+
+/* css for category  */
+.box
+{
+  height: 30px;
+  width: 70px;
+  background-color: brown;
+  text-align: center;
+  margin-right: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+ }
+.box p{
+   margin-top:5px;
+  padding-top: 2px;
+   /* padding-left: 2px;  */
+   text-align: center;
+  font-size:small;
+ font-stretch: extra-expanded;
+  font-style:sans-serif;
+  text-decoration-color: transparent;
+  
+  text-align: justify;
+  color:blue;
+  text-shadow: 0.5px 0.5px greenyellow;
+  
+}
+
+
+
+.first2 {
+ 
+  background-color: rgb(114, 236, 175);
+  height:35px;
+ 
+
+  
+ 
+ 
+  
+}
+.first2 p{
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+   /* padding-left: 2px;  */
+   text-align: center;
+  font-size:xx-small;
+ font-stretch: extra-expanded;
+  font-style:sans-serif;
+  text-decoration-color: transparent;
+  
+  
+  color:blue;
+  text-shadow: 0.5px 0.5px greenyellow;
+}

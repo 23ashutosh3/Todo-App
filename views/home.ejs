@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>
+        <%=title %>
+        </title>
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link rel="stylesheet" href="/css/home.css">
+    </head>
+    <body>
+      <form id="new-Todo-App" action="/Todoin" method="POST">
+  <div class="start">
+
+    <div class="heading">
+    <h2>Todo App </h2>
+  </div>
+    
+    <div class="first">
+    
+      
+        
+        <input type="text" id="Description" name="Description" placeholder="What do you want to do" required>
+        
+      <div class =input>
+          <select id="Category" name="Category" required>
+           <option value="Personal">Personal</option>
+        <option value="Work">Work</option> 
+        <option value="School">School</option>
+        <option value="Cleaning">Cleaning</option>
+        <option value="Other">Other</option>
+        </select>
+    
+      
+    
+    
+        <input type="date" id="date" name="date" required>
+       </div> 
+    
+         <div class="task">
+      
+        <input type="submit" value="ADD TASK">
+     
+        </div>
+      
+    </div>
+    </div>
+
+    
+    </form>
+   
+
+
+    <div class="start">
+      <div class="heading">
+      <h2>Your Pending Work </h2>
+
+    </div>
+
+      <% for(let i of todo_list)
+      {%>
+        <div class="first0">
+      <div class="first1">
+
+<!-- for deleting from database -->
+
+         <div class="delete-button">
+          <a href="/delete-todo/?id=<%=i._id %>">
+        <i class="fas fa-window-close"></i> </a>
+      </div> 
+
+        <span><p><%= i.Description %></p></span>
+        <div class="box">
+        <span><p><%= i.Category %></p></span>
+    </div>
+  </div>
+      <div class="first2">
+    <h6><p><%= i.date %></p></h6>
+      </div>
+  
+</div>      
+      <%}%>
+      </div>
+
+
+<script type="text/javascript" src="/js/home.js"></script>
+</body>
+    
+</html> 
